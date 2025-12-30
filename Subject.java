@@ -16,27 +16,34 @@ public class Subject {
     private String name;
     private String code;
     private int credits;
+    private String department;
+    private int semester;
 
-
-    public Subject(String name, String code, int credits) {
+    public Subject(String name, String code, int credits, String department, int semester) {
         validateName(name);
         validateCredits(credits);
         this.name = name;
         this.code = code;
         this.credits = credits;
-
+        this.department = department;
+        this.semester = semester;
     }
 
     public String getName() { 
-    	return name; 
+      return name; 
     }
     public String getCode() { 
-    	return code; 
+      return code; 
     }
     public int getCredits() { 
-    	return credits;
+      return credits;
     }
-
+    public String getDepartment() { 
+      return department;
+    }
+    public int getSemester() { 
+      return semester;
+    }
     public void setName(String name) {
         validateName(name);
         this.name = name;
@@ -56,3 +63,5 @@ public class Subject {
         }
     }
 }
+
+//I deleted and pasted the code from chat
