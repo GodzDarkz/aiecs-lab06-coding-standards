@@ -14,10 +14,12 @@ public class Session {
     private String subjectCode;
     private int startTime; 
     private int endTime;   
+    private String room;
 
     public Session(String subjectCode, int startTime, int endTime, String room) {
         setDuration(startTime, endTime);
         this.subjectCode = subjectCode;
+        this.room = room;
     }
 
     public String getSubjectCode() { 
@@ -29,6 +31,9 @@ public class Session {
     public int getEndTime() { 
       return endTime; 
     }
+    public String getRoom() { 
+      return room; 
+    }
 
     public void setDuration(int startTime, int endTime) {
         if (startTime >= endTime) {
@@ -38,4 +43,5 @@ public class Session {
         this.endTime = endTime;
     }
 }
-//created Session.java and pasted the code from chat
+
+//Added a new variable room
